@@ -1,5 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Merriweather+Sans&family=Open+Sans&family=Ubuntu&display=swap');
+// font-family: 'Alegreya Sans SC', sans-serif;
+// font-family: 'Merriweather Sans', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
 *   {
     padding: 0;
     margin: 0;
     font-size: 100%;
     }
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-padding-top: 70px;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $theme-color;
+    text-decoration-color: $text-color;
+    padding-top: 70px;
+    transition: .8s ease all;
+    &.dark{
+        background-color: $switch-theme-color;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+
+.horizontal-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
